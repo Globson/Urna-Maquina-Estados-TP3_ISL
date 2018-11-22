@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="E0">
+			<x>33.0</x>
+			<y>148.0</y>
+		</state>
+		<state id="1" name="E1">
+			<x>154.0</x>
+			<y>146.0</y>
+		</state>
+		<state id="2" name="E3">
+			<x>269.0</x>
+			<y>229.0</y>
+		</state>
+		<state id="3" name="E7">
+			<x>412.0</x>
+			<y>302.0</y>
+		</state>
+		<state id="4" name="E2">
+			<x>271.0</x>
+			<y>87.0</y>
+		</state>
+		<state id="5" name="E4">
+			<x>409.0</x>
+			<y>41.0</y>
+		</state>
+		<state id="6" name="E5">
+			<x>406.0</x>
+			<y>126.0</y>
+		</state>
+		<state id="7" name="E6">
+			<x>412.0</x>
+			<y>213.0</y>
+		</state>
+		<state id="8" name="Voto">
+			<x>574.0</x>
+			<y>300.0</y>
+			<label>C4</label>
+		</state>
+		<state id="9" name="Voto">
+			<x>573.0</x>
+			<y>214.0</y>
+			<label>C3</label>
+		</state>
+		<state id="10" name="Voto">
+			<x>573.0</x>
+			<y>127.0</y>
+			<label>C2</label>
+		</state>
+		<state id="11" name="Voto">
+			<x>575.0</x>
+			<y>42.0</y>
+			<label>C1</label>
+		</state>
+		<state id="12" name="E8">
+			<x>168.0</x>
+			<y>511.0</y>
+		</state>
+		<state id="13" name="Voto">
+			<x>571.0</x>
+			<y>504.0</y>
+			<label>Nulo</label>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>12</from>
+			<to>13</to>
+			<read>   </read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>11</to>
+			<read>Válido(4)</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read>Válido(9)</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>4</to>
+			<read>Válido(4)</read>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>10</to>
+			<read>Válido(5)</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>Válido(5)</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>8</to>
+			<read>Válido(4)</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>7</to>
+			<controlx>280</controlx>
+			<controly>169</controly>
+			<read>Válido(7)</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>Válido(3)</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>Válido(0)</read>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>9</to>
+			<read>Válido(2)</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>12</to>
+			<controlx>188</controlx>
+			<controly>313</controly>
+			<read>Inválido ou vazio</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>12</to>
+			<controlx>233</controlx>
+			<controly>380</controly>
+			<read>Inválido ou vazio</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>6</to>
+			<read>Válido(8)</read>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>12</to>
+			<controlx>367</controlx>
+			<controly>407</controly>
+			<read>Inválido ou vazio</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>12</to>
+			<controlx>144</controlx>
+			<controly>324</controly>
+			<read>Inválido ou vazio</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>12</to>
+			<controlx>72</controlx>
+			<controly>341</controly>
+			<read>inválido ou vazio</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>12</to>
+			<controlx>349</controlx>
+			<controly>467</controly>
+			<read>inválido ou vazio</read>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>12</to>
+			<controlx>389</controlx>
+			<controly>340</controly>
+			<read>Inválido vazio</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>12</to>
+			<controlx>206</controlx>
+			<controly>367</controly>
+			<read>Inválido ou vazio</read>
+		</transition>
+	</automaton>
+</structure>
