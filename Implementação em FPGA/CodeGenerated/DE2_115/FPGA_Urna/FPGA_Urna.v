@@ -72,16 +72,40 @@ wire [7:0] c2;
 wire [7:0] c3;
 wire [7:0] c4;
 wire [7:0] nulo;
+reg [7:0] REG_AUX;
 wire StatusLED;
 assign LEDG[7] = StatusLED;
 assign LEDR[0] = ~StatusLED;
-
+assign LEDR[17:10] = REG_AUX;
+reg [2:0]Aux;
 //=======================================================
 //  Structural coding
 //=======================================================
 Urna_module UrnaFPGA(.C1(c1), .C2(c2), .C3(c3), .C4(c4), .Nulo(nulo), .Clock(CLOCK_50), .Digit(SW[17:14]), .Valid(KEY[3]), .Finish(KEY[2]),.Status(StatusLED));
 
-//TODO exibição em displays de 7 seg.
+always @ (posedge CLOCK_50) begin
+  Aux = SW[2:0];
+	case (Aux)                     //Selecionando impressao para cada candidato//
+		3'b000:begin
+			REG_AUX <= c1;
+		end
 
+		3'b001:begin
+			REG_AUX <= c2;
+		end
+
+		3'b010:begin
+			REG_AUX <= c3;
+		end
+
+		3'b011:begin
+			REG_AUX <= c4;
+		end
+
+		3'b100:begin
+			REG_AUX <= nulo;
+		end
+	endcase
+end
 
 endmodule
