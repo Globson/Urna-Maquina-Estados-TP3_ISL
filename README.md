@@ -1,6 +1,6 @@
 # Urna-Maquina-Estados-TP3_ISL
 Trabalho prático II de Introdução aos Sistemas Lógicos e Digitais UFV 2018.2
-[](https://i.imgur.com/MQaUj4a.jpg)
+![](https://i.imgur.com/nEeF6m9.jpg)
 Urna eletrônica capaz de armazenar votos de ate 4 candidatos e votos nulos atravéz de uma maquina de estados.
 
 
