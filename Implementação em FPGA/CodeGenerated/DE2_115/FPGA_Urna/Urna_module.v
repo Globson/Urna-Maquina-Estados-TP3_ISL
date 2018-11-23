@@ -6,7 +6,7 @@ module Urna_module(C1,C2,C3,C4,Nulo,Clock,Digit,Valid,Finish,Status);
   output reg [7:0]C2 = 8'b00000000;
   output reg [7:0]C3 = 8'b00000000;
   output reg [7:0]C4 = 8'b00000000;
-  output reg Status;
+  output reg Status = 0;
   reg [3:0]Estado = 4'b0000;
 
 always @ (posedge Clock) begin

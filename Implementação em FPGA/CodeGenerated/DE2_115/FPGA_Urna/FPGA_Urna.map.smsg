@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at fpga_urna.v(68): always construct contains both blocking and non-blocking assignments File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 68
