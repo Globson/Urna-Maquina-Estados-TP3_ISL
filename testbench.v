@@ -14,8 +14,8 @@ module testbench();
   initial begin
     $dumpfile("testdump.vcd");
     $dumpvars(0, testbench);
-    $display("Testbech da Urna Eletronica iniciado!");
-    $monitor("Novo voto detectado! \nC1:  %d\nC2:  %d\nC3:  %d\nC4:  %d\nNulo:%d\n", C1, C2, C3, C4, Nulo);
+    $display("\nTestbech da Urna Eletronica iniciado!");
+    $monitor("\nAlteracao nos votos detectada! \nC1:  %d\nC2:  %d\nC3:  %d\nC4:  %d\nNulo:%d\n", C1, C2, C3, C4, Nulo);
   end
   initial begin
     Clock = 0;
