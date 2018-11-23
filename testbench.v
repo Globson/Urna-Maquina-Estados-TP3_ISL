@@ -22,6 +22,7 @@ module testbench();
     Digit = 4'b0000;
     Valid = 0;
     Finish = 0;
+    Reset = 0;
 //Reset e Finish
     #1 Finish = 1;
     #1 Finish = 0;
@@ -72,7 +73,7 @@ module testbench();
 //Reset e Finish
     #1 Finish = 1;
     #1 Finish = 0;
-/*/Voto Samuel
+//Voto Samuel
     #2 Valid = 1;
     #1 Digit = 4'b0011;
     #1 Valid = 0;
@@ -94,7 +95,7 @@ module testbench();
 /////////////////////////////////////
 //Reset e Finish
     #1 Finish = 1;
-    #1 Finish = 0;*/
+    #1 Finish = 0;
 //Voto William
     #2 Valid = 1;
     #1 Digit = 4'b0011;

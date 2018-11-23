@@ -51,19 +51,16 @@ assign LEDR[0] = ~StatusLED;
 assign LEDR[17:10] = REG_AUX;
 reg [2:0]Aux;
 wire Clock;
-assign Clock = KEY[0];   //Botao para clock manual.
+assign Clock = KEY[0];
 //=======================================================
 //  Structural coding
 //=======================================================
 Urna_module UrnaFPGA(.C1(c1), .C2(c2), .C3(c3), .C4(c4), .Nulo(nulo), .Clock(Clock), .Digit(SW[17:14]), .Valid(SW[10]), .Finish(SW[9]),.Status(StatusLED), .Reset(SW[8]));
 
-always @ (*) begin
+always @ (posedge CLOCK_50) begin
 
   Aux = SW[2:0];
 	case (Aux)                     //Selecionando impressao para cada candidato//
-		3'b000:begin
-			REG_AUX <= 8'b00000000;
-		end
 		3'b001:begin
 			REG_AUX <= c1;
 		end

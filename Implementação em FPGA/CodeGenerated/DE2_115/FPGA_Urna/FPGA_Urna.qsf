@@ -7,22 +7,12 @@ set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name TOP_LEVEL_ENTITY "FPGA_Urna"
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "12.0"
 set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:20:13 NOVEMBER 23,2018"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:35:03 NOVEMBER 23,2018"
 set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 780
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
 set_global_assignment -name SDC_FILE FPGA_Urna.SDC
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
-
-#============================================================
-# CLOCK
-#============================================================
-set_location_assignment PIN_Y2 -to CLOCK_50
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50
-set_location_assignment PIN_AG14 -to CLOCK2_50
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK2_50
-set_location_assignment PIN_AG15 -to CLOCK3_50
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK3_50
 
 #============================================================
 # LED

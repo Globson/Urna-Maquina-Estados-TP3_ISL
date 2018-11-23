@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Nov 23 00:27:03 2018
+Analysis & Synthesis Status : Successful - Fri Nov 23 16:40:26 2018
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : FPGA_Urna
 Top-level Entity Name : FPGA_Urna
 Family : Cyclone IV E
-Total logic elements : 112
-    Total combinational functions : 112
-    Dedicated logic registers : 58
-Total registers : 58
-Total pins : 52
+Total logic elements : 121
+    Total combinational functions : 121
+    Dedicated logic registers : 50
+Total registers : 50
+Total pins : 49
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
