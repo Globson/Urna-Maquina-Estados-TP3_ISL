@@ -63,7 +63,7 @@ reg [2:0]Aux;
 //=======================================================
 //  Structural coding
 //=======================================================
-Urna_module UrnaFPGA(.C1(c1), .C2(c2), .C3(c3), .C4(c4), .Nulo(nulo), .Clock(CLOCK_50), .Digit(SW[17:14]), .Valid(KEY[3]), .Finish(KEY[2]),.Status(StatusLED));
+Urna_module UrnaFPGA(.C1(c1), .C2(c2), .C3(c3), .C4(c4), .Nulo(nulo), .Clock(CLOCK_50), .Digit(SW[17:14]), .Valid(KEY[3]), .Finish(KEY[2]),.Status(StatusLED), .Reset(KEY[0]));
 
 always @ (posedge CLOCK_50) begin
   Aux = SW[2:0];

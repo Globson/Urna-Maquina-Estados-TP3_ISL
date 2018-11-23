@@ -1,6 +1,6 @@
 `include "Urna_module.v"
 module testbench();
-  reg Valid, Finish, Clock;
+  reg Valid, Finish, Clock, Reset;
   reg [3:0]Digit;
   wire [7:0]Nulo;
   wire [7:0]C1;
@@ -8,7 +8,7 @@ module testbench();
   wire [7:0]C3;
   wire [7:0]C4;
   wire Status;
-  Urna_module UrnaAUX(.C1(C1),.C2(C2),.C3(C3),.C4(C4),.Nulo(Nulo),.Clock(Clock),.Digit(Digit),.Valid(Valid),.Finish(Finish),.Status(Status));
+  Urna_module UrnaAUX(.C1(C1),.C2(C2),.C3(C3),.C4(C4),.Nulo(Nulo),.Clock(Clock),.Digit(Digit),.Valid(Valid),.Finish(Finish),.Status(Status), .Reset(Reset));
   always
     #1 Clock <= ~Clock;
   initial begin
@@ -157,8 +157,8 @@ module testbench();
 
 ///////////////////////////////////
 //Reset e Finish
-    #1 Finish = 1;
-    #1 Finish = 0;
+    #1 Reset = 1;
+    #1 Reset = 0;
 
     $finish;
   end
