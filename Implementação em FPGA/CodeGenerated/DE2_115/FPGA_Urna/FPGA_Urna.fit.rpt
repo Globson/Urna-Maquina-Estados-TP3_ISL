@@ -1,5 +1,5 @@
 Fitter report for FPGA_Urna
-Fri Nov 23 16:40:58 2018
+Fri Nov 23 17:37:29 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -68,17 +68,17 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Nov 23 16:40:58 2018       ;
+; Fitter Status                      ; Successful - Fri Nov 23 17:37:29 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; FPGA_Urna                                   ;
 ; Top-level Entity Name              ; FPGA_Urna                                   ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 121 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 121 / 114,480 ( < 1 % )                     ;
-;     Dedicated logic registers      ; 50 / 114,480 ( < 1 % )                      ;
-; Total registers                    ; 50                                          ;
+; Total logic elements               ; 125 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 125 / 114,480 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 51 / 114,480 ( < 1 % )                      ;
+; Total registers                    ; 51                                          ;
 ; Total pins                         ; 49 / 529 ( 9 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
@@ -153,12 +153,12 @@ agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.1%      ;
+;     Processors 2-4         ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -168,8 +168,8 @@ agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 280 ) ; 0.00 % ( 0 / 280 )         ; 0.00 % ( 0 / 280 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 280 ) ; 0.00 % ( 0 / 280 )         ; 0.00 % ( 0 / 280 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 286 ) ; 0.00 % ( 0 / 286 )         ; 0.00 % ( 0 / 286 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 286 ) ; 0.00 % ( 0 / 286 )         ; 0.00 % ( 0 / 286 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -192,7 +192,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 270 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 276 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -200,7 +200,7 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/FPGA_Urna.pin.
+The pin-out file can be found in D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/FPGA_Urna.pin.
 
 
 +-----------------------------------------------------------------------+
@@ -208,26 +208,26 @@ The pin-out file can be found in C:/Users/Grobs/Desktop/Implementação em FPGA Cl
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Total logic elements                        ; 121 / 114,480 ( < 1 % ) ;
-;     -- Combinational with no register       ; 71                      ;
+; Total logic elements                        ; 125 / 114,480 ( < 1 % ) ;
+;     -- Combinational with no register       ; 74                      ;
 ;     -- Register only                        ; 0                       ;
-;     -- Combinational with a register        ; 50                      ;
+;     -- Combinational with a register        ; 51                      ;
 ;                                             ;                         ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 54                      ;
-;     -- 3 input functions                    ; 21                      ;
-;     -- <=2 input functions                  ; 46                      ;
+;     -- 4 input functions                    ; 55                      ;
+;     -- 3 input functions                    ; 20                      ;
+;     -- <=2 input functions                  ; 50                      ;
 ;     -- Register only                        ; 0                       ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 86                      ;
+;     -- normal mode                          ; 90                      ;
 ;     -- arithmetic mode                      ; 35                      ;
 ;                                             ;                         ;
-; Total registers*                            ; 50 / 117,053 ( < 1 % )  ;
-;     -- Dedicated logic registers            ; 50 / 114,480 ( < 1 % )  ;
+; Total registers*                            ; 51 / 117,053 ( < 1 % )  ;
+;     -- Dedicated logic registers            ; 51 / 114,480 ( < 1 % )  ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )       ;
 ;                                             ;                         ;
-; Total LABs:  partially or completely used   ; 10 / 7,155 ( < 1 % )    ;
+; Total LABs:  partially or completely used   ; 11 / 7,155 ( < 1 % )    ;
 ; Virtual pins                                ; 0                       ;
 ; I/O pins                                    ; 49 / 529 ( 9 % )        ;
 ;     -- Clock pins                           ; 0 / 7 ( 0 % )           ;
@@ -246,10 +246,10 @@ The pin-out file can be found in C:/Users/Grobs/Desktop/Implementação em FPGA Cl
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )           ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
 ; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%      ;
-; Peak interconnect usage (total/H/V)         ; 2.4% / 2.0% / 3.1%      ;
-; Maximum fan-out                             ; 50                      ;
-; Highest non-global fan-out                  ; 50                      ;
-; Total fan-out                               ; 612                     ;
+; Peak interconnect usage (total/H/V)         ; 2.5% / 1.9% / 3.4%      ;
+; Maximum fan-out                             ; 51                      ;
+; Highest non-global fan-out                  ; 51                      ;
+; Total fan-out                               ; 623                     ;
 ; Average fan-out                             ; 2.19                    ;
 +---------------------------------------------+-------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -263,26 +263,26 @@ The pin-out file can be found in C:/Users/Grobs/Desktop/Implementação em FPGA Cl
 +---------------------------------------------+------------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                    ; Low                            ;
 ;                                             ;                        ;                                ;
-; Total logic elements                        ; 121 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 71                     ; 0                              ;
+; Total logic elements                        ; 125 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 74                     ; 0                              ;
 ;     -- Register only                        ; 0                      ; 0                              ;
-;     -- Combinational with a register        ; 50                     ; 0                              ;
+;     -- Combinational with a register        ; 51                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic element usage by number of LUT inputs ;                        ;                                ;
-;     -- 4 input functions                    ; 54                     ; 0                              ;
-;     -- 3 input functions                    ; 21                     ; 0                              ;
-;     -- <=2 input functions                  ; 46                     ; 0                              ;
+;     -- 4 input functions                    ; 55                     ; 0                              ;
+;     -- 3 input functions                    ; 20                     ; 0                              ;
+;     -- <=2 input functions                  ; 50                     ; 0                              ;
 ;     -- Register only                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic elements by mode                      ;                        ;                                ;
-;     -- normal mode                          ; 86                     ; 0                              ;
+;     -- normal mode                          ; 90                     ; 0                              ;
 ;     -- arithmetic mode                      ; 35                     ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total registers                             ; 50                     ; 0                              ;
-;     -- Dedicated logic registers            ; 50 / 114480 ( < 1 % )  ; 0 / 114480 ( 0 % )             ;
+; Total registers                             ; 51                     ; 0                              ;
+;     -- Dedicated logic registers            ; 51 / 114480 ( < 1 % )  ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total LABs:  partially or completely used   ; 10 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 11 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                        ;                                ;
 ; Virtual pins                                ; 0                      ; 0                              ;
 ; I/O pins                                    ; 49                     ; 0                              ;
@@ -298,8 +298,8 @@ The pin-out file can be found in C:/Users/Grobs/Desktop/Implementação em FPGA Cl
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-;     -- Total Connections                    ; 607                    ; 5                              ;
-;     -- Registered Connections               ; 119                    ; 0                              ;
+;     -- Total Connections                    ; 618                    ; 5                              ;
+;     -- Registered Connections               ; 124                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
 ;     -- Top                                  ; 0                      ; 0                              ;
@@ -331,18 +331,18 @@ The pin-out file can be found in C:/Users/Grobs/Desktop/Implementação em FPGA Cl
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; KEY[0] ; M23   ; 6        ; 115          ; 40           ; 7            ; 50                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
+; KEY[0] ; M23   ; 6        ; 115          ; 40           ; 7            ; 51                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; KEY[1] ; M21   ; 6        ; 115          ; 53           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; KEY[2] ; N21   ; 6        ; 115          ; 42           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; KEY[3] ; R24   ; 5        ; 115          ; 35           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; SW[0]  ; AB28  ; 5        ; 115          ; 17           ; 0            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-; SW[10] ; AC24  ; 5        ; 115          ; 4            ; 14           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
+; SW[10] ; AC24  ; 5        ; 115          ; 4            ; 14           ; 13                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; SW[11] ; AB24  ; 5        ; 115          ; 5            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; SW[12] ; AB23  ; 5        ; 115          ; 7            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; SW[13] ; AA24  ; 5        ; 115          ; 9            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-; SW[14] ; AA23  ; 5        ; 115          ; 10           ; 7            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-; SW[15] ; AA22  ; 5        ; 115          ; 6            ; 14           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-; SW[16] ; Y24   ; 5        ; 115          ; 13           ; 0            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
+; SW[14] ; AA23  ; 5        ; 115          ; 10           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
+; SW[15] ; AA22  ; 5        ; 115          ; 6            ; 14           ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
+; SW[16] ; Y24   ; 5        ; 115          ; 13           ; 0            ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; SW[17] ; Y23   ; 5        ; 115          ; 14           ; 7            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; SW[1]  ; AC28  ; 5        ; 115          ; 14           ; 0            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; SW[2]  ; AC27  ; 5        ; 115          ; 15           ; 7            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
@@ -351,7 +351,7 @@ The pin-out file can be found in C:/Users/Grobs/Desktop/Implementação em FPGA Cl
 ; SW[5]  ; AC26  ; 5        ; 115          ; 11           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; SW[6]  ; AD26  ; 5        ; 115          ; 10           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; SW[7]  ; AB26  ; 5        ; 115          ; 15           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-; SW[8]  ; AC25  ; 5        ; 115          ; 4            ; 21           ; 49                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
+; SW[8]  ; AC25  ; 5        ; 115          ; 4            ; 21           ; 50                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; SW[9]  ; AB25  ; 5        ; 115          ; 16           ; 7            ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
@@ -1257,8 +1257,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name             ; Entity Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------+-------------+--------------+
-; |FPGA_Urna                 ; 121 (37)    ; 50 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 49   ; 0            ; 71 (37)      ; 0 (0)             ; 50 (0)           ; |FPGA_Urna                      ; FPGA_Urna   ; work         ;
-;    |Urna_module:UrnaFPGA|  ; 84 (84)     ; 50 (50)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 34 (34)      ; 0 (0)             ; 50 (50)          ; |FPGA_Urna|Urna_module:UrnaFPGA ; Urna_module ; work         ;
+; |FPGA_Urna                 ; 125 (36)    ; 51 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 49   ; 0            ; 74 (36)      ; 0 (0)             ; 51 (0)           ; |FPGA_Urna                      ; FPGA_Urna   ; work         ;
+;    |Urna_module:UrnaFPGA|  ; 89 (89)     ; 51 (51)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 38 (38)      ; 0 (0)             ; 51 (51)          ; |FPGA_Urna|Urna_module:UrnaFPGA ; Urna_module ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1307,12 +1307,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[12]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; SW[13]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; KEY[0]   ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
-; SW[15]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[14]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[10]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[16]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[16]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[17]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[14]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[8]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SW[15]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[8]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[9]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[1]    ; Input    ; (0) 0 ps      ; (0) 0 ps      ; --                    ; --  ; --   ;
 ; SW[2]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
@@ -1320,211 +1320,214 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+-----------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                        ;
-+-----------------------------------------+-------------------+---------+
-; Source Pin / Fanout                     ; Pad To Core Index ; Setting ;
-+-----------------------------------------+-------------------+---------+
-; KEY[1]                                  ;                   ;         ;
-; KEY[2]                                  ;                   ;         ;
-; KEY[3]                                  ;                   ;         ;
-; SW[3]                                   ;                   ;         ;
-; SW[4]                                   ;                   ;         ;
-; SW[5]                                   ;                   ;         ;
-; SW[6]                                   ;                   ;         ;
-; SW[7]                                   ;                   ;         ;
-; SW[11]                                  ;                   ;         ;
-; SW[12]                                  ;                   ;         ;
-; SW[13]                                  ;                   ;         ;
-; KEY[0]                                  ;                   ;         ;
-;      - Urna_module:UrnaFPGA|Status      ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C2[0]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C3[0]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C1[0]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C4[0]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Nulo[0]     ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C2[1]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C3[1]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C1[1]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C4[1]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Nulo[1]     ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C2[2]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C3[2]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C1[2]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C4[2]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Nulo[2]     ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C2[3]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C3[3]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C1[3]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C4[3]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Nulo[3]     ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C2[4]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C3[4]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C1[4]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C4[4]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Nulo[4]     ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C2[5]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C3[5]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C1[5]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C4[5]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Nulo[5]     ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C2[6]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C3[6]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C1[6]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C4[6]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Nulo[6]     ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C2[7]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C3[7]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C1[7]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|C4[7]       ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Nulo[7]     ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Estado.0110 ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Estado.0000 ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Estado.0001 ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Estado.0010 ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Estado.0011 ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Estado.0101 ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Estado.0100 ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Estado.0111 ; 1                 ; 0       ;
-;      - Urna_module:UrnaFPGA|Estado.1000 ; 1                 ; 0       ;
-; SW[15]                                  ;                   ;         ;
-;      - Urna_module:UrnaFPGA|Selector9~2 ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|always0~1   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|always0~3   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~28   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~33   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|always0~4   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~43   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~45   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|always0~5   ; 0                 ; 6       ;
-; SW[10]                                  ;                   ;         ;
-;      - Urna_module:UrnaFPGA|always0~0   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~25   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|always0~2   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~35   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~37   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~40   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~46   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~47   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Selector9~6 ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~51   ; 0                 ; 6       ;
-; SW[16]                                  ;                   ;         ;
-;      - Urna_module:UrnaFPGA|always0~0   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|always0~1   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|always0~3   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~28   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|always0~4   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~45   ; 0                 ; 6       ;
-; SW[17]                                  ;                   ;         ;
-;      - Urna_module:UrnaFPGA|always0~0   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|always0~1   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|always0~3   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~29   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|always0~4   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~45   ; 0                 ; 6       ;
-; SW[14]                                  ;                   ;         ;
-;      - Urna_module:UrnaFPGA|Selector9~2 ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~25   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|always0~2   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~29   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~30   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~33   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~35   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~37   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~40   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~43   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|always0~5   ; 0                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Selector9~6 ; 0                 ; 6       ;
-; SW[8]                                   ;                   ;         ;
-;      - Urna_module:UrnaFPGA|Status      ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C2[0]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C3[0]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C1[0]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C4[0]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Nulo[0]     ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C2[1]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C3[1]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C1[1]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C4[1]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Nulo[1]     ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C2[2]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C3[2]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C1[2]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C4[2]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Nulo[2]     ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C2[3]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C3[3]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C1[3]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C4[3]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Nulo[3]     ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C2[4]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C3[4]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C1[4]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C4[4]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Nulo[4]     ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C2[5]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C3[5]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C1[5]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C4[5]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Nulo[5]     ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C2[6]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C3[6]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C1[6]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C4[6]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Nulo[6]     ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C2[7]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C3[7]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C1[7]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C4[7]       ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Nulo[7]     ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~26   ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Nulo[0]~10  ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C2[1]~10    ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C3[1]~10    ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C1[2]~10    ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C4[5]~10    ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~50   ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~52   ; 1                 ; 6       ;
-; SW[9]                                   ;                   ;         ;
-;      - Urna_module:UrnaFPGA|Status      ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~26   ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Nulo[0]~10  ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C2[1]~10    ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C3[1]~10    ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C1[2]~10    ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|C4[5]~10    ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~50   ; 1                 ; 6       ;
-;      - Urna_module:UrnaFPGA|Estado~52   ; 1                 ; 6       ;
-; SW[1]                                   ;                   ;         ;
-;      - Mux4~0                           ; 0                 ; 0       ;
-;      - Mux4~1                           ; 0                 ; 0       ;
-;      - Mux4~2                           ; 0                 ; 0       ;
-;      - Mux8~0                           ; 1                 ; 0       ;
-; SW[2]                                   ;                   ;         ;
-;      - Mux4~0                           ; 1                 ; 6       ;
-;      - Mux4~1                           ; 1                 ; 6       ;
-;      - Mux4~2                           ; 1                 ; 6       ;
-;      - Mux0~2                           ; 1                 ; 6       ;
-;      - Mux8~0                           ; 1                 ; 6       ;
-;      - Mux1~2                           ; 1                 ; 6       ;
-;      - Mux2~2                           ; 1                 ; 6       ;
-;      - Mux3~2                           ; 1                 ; 6       ;
-;      - Mux4~5                           ; 1                 ; 6       ;
-;      - Mux5~2                           ; 1                 ; 6       ;
-;      - Mux6~2                           ; 1                 ; 6       ;
-;      - Mux7~2                           ; 1                 ; 6       ;
-; SW[0]                                   ;                   ;         ;
-;      - Mux4~1                           ; 1                 ; 6       ;
-;      - Mux4~2                           ; 1                 ; 6       ;
-;      - Mux0~2                           ; 1                 ; 6       ;
-;      - Mux1~2                           ; 1                 ; 6       ;
-;      - Mux2~2                           ; 1                 ; 6       ;
-;      - Mux3~2                           ; 1                 ; 6       ;
-;      - Mux4~5                           ; 1                 ; 6       ;
-;      - Mux5~2                           ; 1                 ; 6       ;
-;      - Mux6~2                           ; 1                 ; 6       ;
-;      - Mux7~2                           ; 1                 ; 6       ;
-+-----------------------------------------+-------------------+---------+
++--------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                           ;
++--------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                        ; Pad To Core Index ; Setting ;
++--------------------------------------------+-------------------+---------+
+; KEY[1]                                     ;                   ;         ;
+; KEY[2]                                     ;                   ;         ;
+; KEY[3]                                     ;                   ;         ;
+; SW[3]                                      ;                   ;         ;
+; SW[4]                                      ;                   ;         ;
+; SW[5]                                      ;                   ;         ;
+; SW[6]                                      ;                   ;         ;
+; SW[7]                                      ;                   ;         ;
+; SW[11]                                     ;                   ;         ;
+; SW[12]                                     ;                   ;         ;
+; SW[13]                                     ;                   ;         ;
+; KEY[0]                                     ;                   ;         ;
+;      - Urna_module:UrnaFPGA|StatusNulo     ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|StatusValido   ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C2[0]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C3[0]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C1[0]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C4[0]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Nulo[0]        ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C2[1]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C3[1]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C1[1]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C4[1]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Nulo[1]        ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C2[2]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C3[2]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C1[2]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C4[2]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Nulo[2]        ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C2[3]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C3[3]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C1[3]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C4[3]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Nulo[3]        ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C2[4]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C3[4]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C1[4]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C4[4]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Nulo[4]        ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C2[5]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C3[5]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C1[5]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C4[5]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Nulo[5]        ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C2[6]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C3[6]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C1[6]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C4[6]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Nulo[6]        ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C2[7]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C3[7]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C1[7]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|C4[7]          ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Nulo[7]        ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Estado.0101    ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Estado.0100    ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Estado.0111    ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Estado.0110    ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Estado.1000    ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Estado.0000    ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Estado.0001    ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Estado.0010    ; 1                 ; 0       ;
+;      - Urna_module:UrnaFPGA|Estado.0011    ; 1                 ; 0       ;
+; SW[14]                                     ;                   ;         ;
+;      - Urna_module:UrnaFPGA|C2~8           ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|always0~1      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|always0~2      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~24      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~28      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~36      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~37      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~38      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~42      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~53      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~55      ; 1                 ; 6       ;
+; SW[10]                                     ;                   ;         ;
+;      - Urna_module:UrnaFPGA|C2~8           ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|always0~1      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|always0~2      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~24      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~26      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~28      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~30      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~34      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~39      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~43      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~48      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~53      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~55      ; 0                 ; 6       ;
+; SW[16]                                     ;                   ;         ;
+;      - Urna_module:UrnaFPGA|always0~0      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|always0~3      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~32      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~41      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~45      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~46      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~47      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~51      ; 1                 ; 6       ;
+; SW[17]                                     ;                   ;         ;
+;      - Urna_module:UrnaFPGA|always0~0      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|always0~2      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~33      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~38      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~43      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~48      ; 0                 ; 6       ;
+; SW[15]                                     ;                   ;         ;
+;      - Urna_module:UrnaFPGA|always0~0      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|always0~2      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~32      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~42      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~45      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~47      ; 0                 ; 6       ;
+; SW[8]                                      ;                   ;         ;
+;      - Urna_module:UrnaFPGA|StatusValido   ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C2[0]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C3[0]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C1[0]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C4[0]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Nulo[0]        ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C2[1]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C3[1]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C1[1]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C4[1]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Nulo[1]        ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C2[2]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C3[2]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C1[2]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C4[2]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Nulo[2]        ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C2[3]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C3[3]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C1[3]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C4[3]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Nulo[3]        ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C2[4]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C3[4]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C1[4]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C4[4]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Nulo[4]        ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C2[5]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C3[5]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C1[5]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C4[5]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Nulo[5]        ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C2[6]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C3[6]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C1[6]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C4[6]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Nulo[6]        ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C2[7]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C3[7]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C1[7]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C4[7]          ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Nulo[7]        ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|StatusValido~1 ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|StatusNulo~0   ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|StatusNulo~1   ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~35      ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Nulo[1]~10     ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C2[1]~11       ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C3[5]~10       ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C1[1]~10       ; 0                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C4[0]~10       ; 0                 ; 6       ;
+; SW[9]                                      ;                   ;         ;
+;      - Urna_module:UrnaFPGA|StatusValido~2 ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|StatusNulo~0   ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|StatusNulo~1   ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Estado~27      ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|Nulo[1]~10     ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C2[1]~11       ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C3[5]~10       ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C1[1]~10       ; 1                 ; 6       ;
+;      - Urna_module:UrnaFPGA|C4[0]~10       ; 1                 ; 6       ;
+; SW[1]                                      ;                   ;         ;
+;      - Mux3~0                              ; 0                 ; 0       ;
+;      - Mux3~1                              ; 0                 ; 0       ;
+;      - Mux3~2                              ; 0                 ; 0       ;
+;      - Mux8~0                              ; 1                 ; 0       ;
+; SW[2]                                      ;                   ;         ;
+;      - Mux3~0                              ; 1                 ; 6       ;
+;      - Mux3~1                              ; 1                 ; 6       ;
+;      - Mux3~2                              ; 1                 ; 6       ;
+;      - Mux0~2                              ; 1                 ; 6       ;
+;      - Mux8~0                              ; 1                 ; 6       ;
+;      - Mux1~2                              ; 1                 ; 6       ;
+;      - Mux2~2                              ; 1                 ; 6       ;
+;      - Mux3~5                              ; 1                 ; 6       ;
+;      - Mux4~2                              ; 1                 ; 6       ;
+;      - Mux5~2                              ; 1                 ; 6       ;
+;      - Mux6~2                              ; 1                 ; 6       ;
+;      - Mux7~2                              ; 1                 ; 6       ;
+; SW[0]                                      ;                   ;         ;
+;      - Mux3~1                              ; 1                 ; 6       ;
+;      - Mux3~2                              ; 1                 ; 6       ;
+;      - Mux0~2                              ; 1                 ; 6       ;
+;      - Mux1~2                              ; 1                 ; 6       ;
+;      - Mux2~2                              ; 1                 ; 6       ;
+;      - Mux3~5                              ; 1                 ; 6       ;
+;      - Mux4~2                              ; 1                 ; 6       ;
+;      - Mux5~2                              ; 1                 ; 6       ;
+;      - Mux6~2                              ; 1                 ; 6       ;
+;      - Mux7~2                              ; 1                 ; 6       ;
++--------------------------------------------+-------------------+---------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1532,15 +1535,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                            ; Location            ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; KEY[0]                          ; PIN_M23             ; 50      ; Clock        ; no     ; --                   ; --               ; --                        ;
-; Mux8~0                          ; LCCOMB_X114_Y14_N26 ; 8       ; Latch enable ; yes    ; Global Clock         ; GCLK7            ; --                        ;
-; SW[8]                           ; PIN_AC25            ; 49      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; SW[9]                           ; PIN_AB25            ; 9       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; Urna_module:UrnaFPGA|C1[2]~10   ; LCCOMB_X113_Y25_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Urna_module:UrnaFPGA|C2[1]~10   ; LCCOMB_X114_Y25_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Urna_module:UrnaFPGA|C3[1]~10   ; LCCOMB_X110_Y25_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Urna_module:UrnaFPGA|C4[5]~10   ; LCCOMB_X112_Y25_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Urna_module:UrnaFPGA|Nulo[0]~10 ; LCCOMB_X113_Y25_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; KEY[0]                          ; PIN_M23             ; 51      ; Clock        ; no     ; --                   ; --               ; --                        ;
+; Mux8~0                          ; LCCOMB_X114_Y14_N26 ; 8       ; Latch enable ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; SW[8]                           ; PIN_AC25            ; 50      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; Urna_module:UrnaFPGA|C1[1]~10   ; LCCOMB_X111_Y25_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Urna_module:UrnaFPGA|C2[1]~11   ; LCCOMB_X114_Y25_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Urna_module:UrnaFPGA|C3[5]~10   ; LCCOMB_X113_Y25_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Urna_module:UrnaFPGA|C4[0]~10   ; LCCOMB_X109_Y25_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Urna_module:UrnaFPGA|Nulo[1]~10 ; LCCOMB_X112_Y25_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +---------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1549,7 +1551,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name   ; Location            ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Mux8~0 ; LCCOMB_X114_Y14_N26 ; 8       ; 0                                    ; Global Clock         ; GCLK7            ; --                        ;
+; Mux8~0 ; LCCOMB_X114_Y14_N26 ; 8       ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
 +--------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1558,27 +1560,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 184 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 36 / 10,120 ( < 1 % )   ;
-; C4 interconnects      ; 206 / 209,544 ( < 1 % ) ;
-; Direct links          ; 29 / 342,891 ( < 1 % )  ;
+; Block interconnects   ; 183 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 37 / 10,120 ( < 1 % )   ;
+; C4 interconnects      ; 208 / 209,544 ( < 1 % ) ;
+; Direct links          ; 24 / 342,891 ( < 1 % )  ;
 ; Global clocks         ; 1 / 20 ( 5 % )          ;
-; Local interconnects   ; 70 / 119,088 ( < 1 % )  ;
-; R24 interconnects     ; 27 / 9,963 ( < 1 % )    ;
-; R4 interconnects      ; 180 / 289,782 ( < 1 % ) ;
+; Local interconnects   ; 79 / 119,088 ( < 1 % )  ;
+; R24 interconnects     ; 29 / 9,963 ( < 1 % )    ;
+; R4 interconnects      ; 185 / 289,782 ( < 1 % ) ;
 +-----------------------+-------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 12.10) ; Number of LABs  (Total = 10) ;
+; Number of Logic Elements  (Average = 11.36) ; Number of LABs  (Total = 11) ;
 +---------------------------------------------+------------------------------+
 ; 1                                           ; 2                            ;
 ; 2                                           ; 0                            ;
 ; 3                                           ; 0                            ;
 ; 4                                           ; 0                            ;
-; 5                                           ; 0                            ;
+; 5                                           ; 1                            ;
 ; 6                                           ; 0                            ;
 ; 7                                           ; 1                            ;
 ; 8                                           ; 0                            ;
@@ -1588,37 +1590,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 12                                          ; 0                            ;
 ; 13                                          ; 0                            ;
 ; 14                                          ; 0                            ;
-; 15                                          ; 0                            ;
-; 16                                          ; 7                            ;
+; 15                                          ; 1                            ;
+; 16                                          ; 6                            ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.10) ; Number of LABs  (Total = 10) ;
+; LAB-wide Signals  (Average = 1.09) ; Number of LABs  (Total = 11) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 7                            ;
-; 1 Clock enable                     ; 2                            ;
-; 1 Sync. clear                      ; 2                            ;
+; 1 Clock                            ; 8                            ;
+; 1 Clock enable                     ; 1                            ;
+; 1 Sync. clear                      ; 3                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 17.10) ; Number of LABs  (Total = 10) ;
+; Number of Signals Sourced  (Average = 16.00) ; Number of LABs  (Total = 11) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 2                            ;
 ; 2                                            ; 0                            ;
 ; 3                                            ; 0                            ;
 ; 4                                            ; 0                            ;
-; 5                                            ; 0                            ;
+; 5                                            ; 1                            ;
 ; 6                                            ; 0                            ;
-; 7                                            ; 1                            ;
+; 7                                            ; 0                            ;
 ; 8                                            ; 0                            ;
-; 9                                            ; 0                            ;
+; 9                                            ; 1                            ;
 ; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
 ; 12                                           ; 0                            ;
@@ -1630,60 +1632,56 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 18                                           ; 0                            ;
 ; 19                                           ; 0                            ;
 ; 20                                           ; 1                            ;
-; 21                                           ; 0                            ;
-; 22                                           ; 1                            ;
-; 23                                           ; 0                            ;
-; 24                                           ; 5                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 0                            ;
+; 23                                           ; 1                            ;
+; 24                                           ; 4                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.10) ; Number of LABs  (Total = 10) ;
+; Number of Signals Sourced Out  (Average = 6.27) ; Number of LABs  (Total = 11) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
 ; 1                                               ; 2                            ;
 ; 2                                               ; 0                            ;
 ; 3                                               ; 0                            ;
-; 4                                               ; 0                            ;
-; 5                                               ; 0                            ;
+; 4                                               ; 1                            ;
+; 5                                               ; 1                            ;
 ; 6                                               ; 0                            ;
 ; 7                                               ; 1                            ;
-; 8                                               ; 3                            ;
-; 9                                               ; 3                            ;
-; 10                                              ; 0                            ;
-; 11                                              ; 1                            ;
+; 8                                               ; 4                            ;
+; 9                                               ; 1                            ;
+; 10                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 12.20) ; Number of LABs  (Total = 10) ;
+; Number of Distinct Inputs  (Average = 11.64) ; Number of LABs  (Total = 11) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 1                            ;
 ; 3                                            ; 0                            ;
-; 4                                            ; 0                            ;
+; 4                                            ; 1                            ;
 ; 5                                            ; 1                            ;
 ; 6                                            ; 0                            ;
 ; 7                                            ; 0                            ;
 ; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 0                            ;
+; 10                                           ; 1                            ;
 ; 11                                           ; 0                            ;
 ; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 2                            ;
+; 13                                           ; 2                            ;
+; 14                                           ; 1                            ;
 ; 15                                           ; 1                            ;
-; 16                                           ; 1                            ;
-; 17                                           ; 1                            ;
+; 16                                           ; 0                            ;
+; 17                                           ; 2                            ;
 ; 18                                           ; 1                            ;
-; 19                                           ; 0                            ;
-; 20                                           ; 0                            ;
-; 21                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -1787,11 +1785,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[12]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[13]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; KEY[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[15]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[14]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[10]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[16]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[17]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[14]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[15]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[8]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[9]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[1]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1841,64 +1839,64 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; KEY[0]          ; SW[1]                ; 40.6              ;
+; KEY[0]          ; SW[1]                ; 43.5              ;
 ; I/O             ; SW[1]                ; 23.0              ;
-; KEY[0],I/O      ; SW[1]                ; 19.4              ;
+; KEY[0],I/O      ; SW[1]                ; 19.2              ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
 
 
-+---------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                   ;
-+------------------------------+------------------------------+-------------------+
-; Source Register              ; Destination Register         ; Delay Added in ns ;
-+------------------------------+------------------------------+-------------------+
-; SW[1]                        ; REG_AUX[3]                   ; 4.460             ;
-; Urna_module:UrnaFPGA|Nulo[4] ; REG_AUX[4]                   ; 3.526             ;
-; Urna_module:UrnaFPGA|Nulo[1] ; REG_AUX[1]                   ; 3.376             ;
-; SW[2]                        ; REG_AUX[3]                   ; 3.362             ;
-; Urna_module:UrnaFPGA|C3[2]   ; REG_AUX[2]                   ; 3.327             ;
-; Urna_module:UrnaFPGA|Nulo[5] ; REG_AUX[5]                   ; 3.280             ;
-; Urna_module:UrnaFPGA|C2[5]   ; REG_AUX[5]                   ; 3.278             ;
-; SW[0]                        ; REG_AUX[4]                   ; 3.211             ;
-; Urna_module:UrnaFPGA|C3[3]   ; REG_AUX[3]                   ; 3.178             ;
-; Urna_module:UrnaFPGA|Nulo[7] ; REG_AUX[7]                   ; 3.129             ;
-; Urna_module:UrnaFPGA|C2[7]   ; REG_AUX[7]                   ; 3.123             ;
-; Urna_module:UrnaFPGA|C3[6]   ; REG_AUX[6]                   ; 3.081             ;
-; Urna_module:UrnaFPGA|C3[0]   ; REG_AUX[0]                   ; 3.081             ;
-; Urna_module:UrnaFPGA|Nulo[6] ; REG_AUX[6]                   ; 3.066             ;
-; Urna_module:UrnaFPGA|Nulo[2] ; REG_AUX[2]                   ; 3.055             ;
-; Urna_module:UrnaFPGA|Nulo[3] ; REG_AUX[3]                   ; 3.053             ;
-; Urna_module:UrnaFPGA|C4[6]   ; REG_AUX[6]                   ; 3.039             ;
-; Urna_module:UrnaFPGA|C4[0]   ; REG_AUX[0]                   ; 3.039             ;
-; Urna_module:UrnaFPGA|Nulo[0] ; REG_AUX[0]                   ; 3.027             ;
-; Urna_module:UrnaFPGA|C2[4]   ; REG_AUX[4]                   ; 3.024             ;
-; Urna_module:UrnaFPGA|C3[4]   ; REG_AUX[4]                   ; 2.873             ;
-; Urna_module:UrnaFPGA|C2[1]   ; REG_AUX[1]                   ; 2.872             ;
-; Urna_module:UrnaFPGA|C3[5]   ; REG_AUX[5]                   ; 2.869             ;
-; Urna_module:UrnaFPGA|C3[7]   ; REG_AUX[7]                   ; 2.848             ;
-; Urna_module:UrnaFPGA|C3[1]   ; REG_AUX[1]                   ; 2.844             ;
-; Urna_module:UrnaFPGA|C1[6]   ; REG_AUX[6]                   ; 2.794             ;
-; Urna_module:UrnaFPGA|C2[0]   ; REG_AUX[0]                   ; 2.789             ;
-; Urna_module:UrnaFPGA|C2[6]   ; REG_AUX[6]                   ; 2.780             ;
-; Urna_module:UrnaFPGA|C2[3]   ; REG_AUX[3]                   ; 2.767             ;
-; Urna_module:UrnaFPGA|C1[4]   ; REG_AUX[4]                   ; 2.758             ;
-; Urna_module:UrnaFPGA|C1[1]   ; REG_AUX[1]                   ; 2.713             ;
-; Urna_module:UrnaFPGA|C1[0]   ; REG_AUX[0]                   ; 2.646             ;
-; Urna_module:UrnaFPGA|C2[2]   ; REG_AUX[2]                   ; 2.616             ;
-; Urna_module:UrnaFPGA|C1[5]   ; REG_AUX[5]                   ; 2.607             ;
-; Urna_module:UrnaFPGA|C4[4]   ; REG_AUX[4]                   ; 2.535             ;
-; Urna_module:UrnaFPGA|C1[7]   ; REG_AUX[7]                   ; 2.527             ;
-; Urna_module:UrnaFPGA|C4[7]   ; REG_AUX[7]                   ; 2.507             ;
-; Urna_module:UrnaFPGA|C4[1]   ; REG_AUX[1]                   ; 2.498             ;
-; Urna_module:UrnaFPGA|C1[3]   ; REG_AUX[3]                   ; 2.493             ;
-; Urna_module:UrnaFPGA|C4[3]   ; REG_AUX[3]                   ; 2.339             ;
-; Urna_module:UrnaFPGA|C4[2]   ; REG_AUX[2]                   ; 2.339             ;
-; Urna_module:UrnaFPGA|C1[2]   ; REG_AUX[2]                   ; 2.339             ;
-; Urna_module:UrnaFPGA|C4[5]   ; REG_AUX[5]                   ; 2.338             ;
-; KEY[0]                       ; Urna_module:UrnaFPGA|Nulo[0] ; 0.219             ;
-+------------------------------+------------------------------+-------------------+
++--------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                        ;
++------------------------------+-----------------------------------+-------------------+
+; Source Register              ; Destination Register              ; Delay Added in ns ;
++------------------------------+-----------------------------------+-------------------+
+; SW[1]                        ; REG_AUX[2]                        ; 4.381             ;
+; Urna_module:UrnaFPGA|C3[2]   ; REG_AUX[2]                        ; 3.524             ;
+; Urna_module:UrnaFPGA|Nulo[4] ; REG_AUX[4]                        ; 3.521             ;
+; Urna_module:UrnaFPGA|Nulo[1] ; REG_AUX[1]                        ; 3.372             ;
+; Urna_module:UrnaFPGA|C3[3]   ; REG_AUX[3]                        ; 3.357             ;
+; SW[2]                        ; REG_AUX[2]                        ; 3.310             ;
+; Urna_module:UrnaFPGA|C2[5]   ; REG_AUX[5]                        ; 3.299             ;
+; Urna_module:UrnaFPGA|Nulo[3] ; REG_AUX[3]                        ; 3.275             ;
+; Urna_module:UrnaFPGA|C3[7]   ; REG_AUX[7]                        ; 3.262             ;
+; Urna_module:UrnaFPGA|C3[5]   ; REG_AUX[5]                        ; 3.262             ;
+; Urna_module:UrnaFPGA|C3[4]   ; REG_AUX[4]                        ; 3.254             ;
+; SW[0]                        ; REG_AUX[4]                        ; 3.201             ;
+; Urna_module:UrnaFPGA|Nulo[2] ; REG_AUX[2]                        ; 3.163             ;
+; Urna_module:UrnaFPGA|C2[7]   ; REG_AUX[7]                        ; 3.149             ;
+; Urna_module:UrnaFPGA|Nulo[0] ; REG_AUX[0]                        ; 3.103             ;
+; Urna_module:UrnaFPGA|C3[1]   ; REG_AUX[1]                        ; 3.099             ;
+; Urna_module:UrnaFPGA|Nulo[7] ; REG_AUX[7]                        ; 3.074             ;
+; Urna_module:UrnaFPGA|Nulo[5] ; REG_AUX[5]                        ; 3.069             ;
+; Urna_module:UrnaFPGA|C4[6]   ; REG_AUX[6]                        ; 3.061             ;
+; Urna_module:UrnaFPGA|C4[0]   ; REG_AUX[0]                        ; 3.061             ;
+; Urna_module:UrnaFPGA|C3[6]   ; REG_AUX[6]                        ; 3.052             ;
+; Urna_module:UrnaFPGA|C3[0]   ; REG_AUX[0]                        ; 3.052             ;
+; Urna_module:UrnaFPGA|Nulo[6] ; REG_AUX[6]                        ; 3.025             ;
+; Urna_module:UrnaFPGA|C2[2]   ; REG_AUX[2]                        ; 2.911             ;
+; Urna_module:UrnaFPGA|C2[3]   ; REG_AUX[3]                        ; 2.893             ;
+; Urna_module:UrnaFPGA|C2[6]   ; REG_AUX[6]                        ; 2.843             ;
+; Urna_module:UrnaFPGA|C2[4]   ; REG_AUX[4]                        ; 2.835             ;
+; Urna_module:UrnaFPGA|C2[1]   ; REG_AUX[1]                        ; 2.832             ;
+; Urna_module:UrnaFPGA|C2[0]   ; REG_AUX[0]                        ; 2.814             ;
+; Urna_module:UrnaFPGA|C1[4]   ; REG_AUX[4]                        ; 2.782             ;
+; Urna_module:UrnaFPGA|C1[1]   ; REG_AUX[1]                        ; 2.711             ;
+; Urna_module:UrnaFPGA|C1[6]   ; REG_AUX[6]                        ; 2.705             ;
+; Urna_module:UrnaFPGA|C4[4]   ; REG_AUX[4]                        ; 2.638             ;
+; Urna_module:UrnaFPGA|C4[1]   ; REG_AUX[1]                        ; 2.568             ;
+; Urna_module:UrnaFPGA|C1[0]   ; REG_AUX[0]                        ; 2.558             ;
+; Urna_module:UrnaFPGA|C4[7]   ; REG_AUX[7]                        ; 2.554             ;
+; Urna_module:UrnaFPGA|C1[3]   ; REG_AUX[3]                        ; 2.535             ;
+; Urna_module:UrnaFPGA|C1[5]   ; REG_AUX[5]                        ; 2.531             ;
+; Urna_module:UrnaFPGA|C1[7]   ; REG_AUX[7]                        ; 2.524             ;
+; Urna_module:UrnaFPGA|C4[3]   ; REG_AUX[3]                        ; 2.392             ;
+; Urna_module:UrnaFPGA|C4[2]   ; REG_AUX[2]                        ; 2.322             ;
+; Urna_module:UrnaFPGA|C1[2]   ; REG_AUX[2]                        ; 2.322             ;
+; Urna_module:UrnaFPGA|C4[5]   ; REG_AUX[5]                        ; 2.313             ;
+; KEY[0]                       ; Urna_module:UrnaFPGA|StatusValido ; 0.250             ;
++------------------------------+-----------------------------------+-------------------+
 Note: This table only shows the top 44 path(s) that have the largest delay added for hold.
 
 
@@ -1935,12 +1933,12 @@ Info (332151): Clock uncertainty is not calculated until you update the timing n
 Info (332144): No user constrained base clocks found in the design
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node Mux8~0  File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 63
+Info (176353): Automatically promoted node Mux8~0  File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 63
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:06
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1953,46 +1951,46 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.20 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.15 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (169177): 22 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin KEY[1] uses I/O standard 3.3-V LVTTL at M21 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 33
-    Info (169178): Pin KEY[2] uses I/O standard 3.3-V LVTTL at N21 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 33
-    Info (169178): Pin KEY[3] uses I/O standard 3.3-V LVTTL at R24 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 33
-    Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at AD27 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at AB27 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at AC26 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at AD26 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at AB26 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[11] uses I/O standard 3.3-V LVTTL at AB24 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[12] uses I/O standard 3.3-V LVTTL at AB23 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[13] uses I/O standard 3.3-V LVTTL at AA24 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin KEY[0] uses I/O standard 3.3-V LVTTL at M23 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 33
-    Info (169178): Pin SW[15] uses I/O standard 3.3-V LVTTL at AA22 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[10] uses I/O standard 3.3-V LVTTL at AC24 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[16] uses I/O standard 3.3-V LVTTL at Y24 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[17] uses I/O standard 3.3-V LVTTL at Y23 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[14] uses I/O standard 3.3-V LVTTL at AA23 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at AC25 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at AB25 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at AC28 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at AC27 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at AB28 File: C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
-Info (144001): Generated suppressed messages file C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/FPGA_Urna.fit.smsg
+    Info (169178): Pin KEY[1] uses I/O standard 3.3-V LVTTL at M21 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 33
+    Info (169178): Pin KEY[2] uses I/O standard 3.3-V LVTTL at N21 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 33
+    Info (169178): Pin KEY[3] uses I/O standard 3.3-V LVTTL at R24 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 33
+    Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at AD27 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at AB27 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at AC26 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at AD26 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at AB26 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[11] uses I/O standard 3.3-V LVTTL at AB24 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[12] uses I/O standard 3.3-V LVTTL at AB23 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[13] uses I/O standard 3.3-V LVTTL at AA24 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin KEY[0] uses I/O standard 3.3-V LVTTL at M23 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 33
+    Info (169178): Pin SW[14] uses I/O standard 3.3-V LVTTL at AA23 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[10] uses I/O standard 3.3-V LVTTL at AC24 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[16] uses I/O standard 3.3-V LVTTL at Y24 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[17] uses I/O standard 3.3-V LVTTL at Y23 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[15] uses I/O standard 3.3-V LVTTL at AA22 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at AC25 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at AB25 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at AC28 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at AC27 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at AB28 File: D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/fpga_urna.v Line: 36
+Info (144001): Generated suppressed messages file D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/FPGA_Urna.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1472 megabytes
-    Info: Processing ended: Fri Nov 23 16:40:59 2018
-    Info: Elapsed time: 00:00:32
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Peak virtual memory: 1484 megabytes
+    Info: Processing ended: Fri Nov 23 17:37:29 2018
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:19
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Grobs/Desktop/Implementação em FPGA Clock manual/CodeGenerated/DE2_115/FPGA_Urna/FPGA_Urna.fit.smsg.
+The suppressed messages can be found in D:/GitHub Clones/Urna-Maquina-Estados-TP3_ISL/Implementação em FPGA/CodeGenerated/DE2_115/FPGA_Urna/FPGA_Urna.fit.smsg.
 
 

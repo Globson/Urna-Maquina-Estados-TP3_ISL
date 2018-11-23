@@ -1,14 +1,14 @@
 `include "Urna_module.v"
 module testbench();
-  reg Valid, Finish, Clock, Reset;
+  reg Valid, Finish, Clock, Next;
   reg [3:0]Digit;
   wire [7:0]Nulo;
   wire [7:0]C1;
   wire [7:0]C2;
   wire [7:0]C3;
   wire [7:0]C4;
-  wire Status;
-  Urna_module UrnaAUX(.C1(C1),.C2(C2),.C3(C3),.C4(C4),.Nulo(Nulo),.Clock(Clock),.Digit(Digit),.Valid(Valid),.Finish(Finish),.Status(Status), .Reset(Reset));
+  wire StatusValido,StatusNulo;
+  Urna_module UrnaAUX(.C1(C1),.C2(C2),.C3(C3),.C4(C4),.Nulo(Nulo),.Clock(Clock),.Digit(Digit),.Valid(Valid),.Next(Next),.StatusValido(StatusValido),.StatusNulo(StatusNulo), .Finish(Finish));
   always
     #1 Clock <= ~Clock;
   initial begin
@@ -22,10 +22,10 @@ module testbench();
     Digit = 4'b0000;
     Valid = 0;
     Finish = 0;
-    Reset = 0;
+    Next = 0;
 //Reset e Finish
-    #1 Finish = 1;
-    #1 Finish = 0;
+    #1 Next = 1;
+    #1 Next = 0;
 
 //Voto Samuel
     #2 Valid = 1;
@@ -48,8 +48,8 @@ module testbench();
     #1 Valid = 0;
 /////////////////////////////////////
 //Reset e Finish
-    #1 Finish = 1;
-    #1 Finish = 0;
+    #1 Next = 1;
+    #1 Next = 0;
 //Voto Yuri
     #2 Valid = 1;
     #1 Digit = 4'b0011;
@@ -71,8 +71,8 @@ module testbench();
     #1 Valid = 0;
 ///////////////////////////////////////
 //Reset e Finish
-    #1 Finish = 1;
-    #1 Finish = 0;
+    #1 Next = 1;
+    #1 Next = 0;
 //Voto Samuel
     #2 Valid = 1;
     #1 Digit = 4'b0011;
@@ -94,8 +94,8 @@ module testbench();
     #1 Valid = 0;
 /////////////////////////////////////
 //Reset e Finish
-    #1 Finish = 1;
-    #1 Finish = 0;
+    #1 Next = 1;
+    #1 Next = 0;
 //Voto William
     #2 Valid = 1;
     #1 Digit = 4'b0011;
@@ -117,8 +117,8 @@ module testbench();
     #1 Valid = 0;
 /////////////////////////////////////
 //Reset e Finish
-    #1 Finish = 1;
-    #1 Finish = 0;
+    #1 Next = 1;
+    #1 Next = 0;
 //Voto Marcos
     #2 Valid = 1;
     #1 Digit = 4'b0011;
@@ -140,8 +140,8 @@ module testbench();
     #1 Valid = 0;
 ///////////////////////////////////
 //Reset e Finish
-    #1 Finish = 1;
-    #1 Finish = 0;
+    #1 Next = 1;
+    #1 Next = 0;
 
 
 //Voto Nulo
@@ -158,8 +158,8 @@ module testbench();
 
 ///////////////////////////////////
 //Reset e Finish
-    #1 Reset = 1;
-    #1 Reset = 0;
+    #1 Finish = 1;
+    #1 Finish = 0;
 
     $finish;
   end

@@ -45,9 +45,9 @@ wire [7:0] c3;
 wire [7:0] c4;
 wire [7:0] nulo;
 reg [7:0] REG_AUX;
-wire StatusLED;
-assign LEDG[7] = StatusLED;
-assign LEDR[0] = ~StatusLED;
+wire StatusLEDValido,StatusLEDNulo;
+assign LEDG[7] = StatusLEDValido;
+assign LEDR[0] = ~StatusLEDNulo;
 assign LEDR[17:10] = REG_AUX;
 reg [2:0]Aux;
 wire Clock;
@@ -55,7 +55,7 @@ assign Clock = KEY[0];   //Botao para clock manual.
 //=======================================================
 //  Structural coding
 //=======================================================
-Urna_module UrnaFPGA(.C1(c1), .C2(c2), .C3(c3), .C4(c4), .Nulo(nulo), .Clock(Clock), .Digit(SW[17:14]), .Valid(SW[10]), .Finish(SW[9]),.Status(StatusLED), .Reset(SW[8]));
+Urna_module UrnaFPGA(.C1(c1), .C2(c2), .C3(c3), .C4(c4), .Nulo(nulo), .Clock(Clock), .Digit(SW[17:14]), .Valid(SW[10]), .Next(SW[9]),.StatusValido(StatusLEDValido), .StatusNulo(StatusLEDNulo), .Finish(SW[8]));
 
 always @ (*) begin
 

@@ -1,16 +1,17 @@
-module Urna_module(C1,C2,C3,C4,Nulo,Clock,Digit,Valid,Finish,Status,Reset);
-  input wire Clock,Valid,Finish,Reset;
+module Urna_module(C1,C2,C3,C4,Nulo,Clock,Digit,Valid,Finish,StatusValido,StatusNulo,Next);
+  input wire Clock,Valid,Finish,Next;
   input wire [3:0]Digit;
   output reg [7:0]Nulo = 8'b00000000;
   output reg [7:0]C1 = 8'b00000000;
   output reg [7:0]C2 = 8'b00000000;
   output reg [7:0]C3 = 8'b00000000;
   output reg [7:0]C4 = 8'b00000000;
-  output reg Status;
+  output reg StatusValido = 0;
+  output reg StatusNulo = 1;
   reg [3:0]Estado = 4'b0000;
 
 always @ (posedge Clock) begin
-    if(~Finish)begin
+    if((~Finish * ~Next))begin
         case (Estado)
           4'b0000: //E0
             begin
@@ -67,7 +68,7 @@ always @ (posedge Clock) begin
             begin
               if((Digit[3]==0)&(Digit[2]==1)&(Digit[1]==0)&(Digit[0]==0)&(Valid))begin    //4
                  C1 <= C1 + 8'b00000001;       //Voto no Samuel-3494
-                 Status <= 1;
+                 StatusValido <= 1;
               end
               else if(Valid)begin
                   Estado <= 4'b1000;
@@ -78,7 +79,7 @@ always @ (posedge Clock) begin
             begin
               if((Digit[3]==0)&(Digit[2]==1)&(Digit[1]==0)&(Digit[0]==1)&(Valid))begin    //5
                 C2 <= C2 + 8'b00000001;       //Voto no Yuri-3485
-                Status <= 1;
+                StatusValido <= 1;
               end
               else if(Valid)begin
                   Estado <= 4'b1000;
@@ -89,7 +90,7 @@ always @ (posedge Clock) begin
             begin
               if((Digit[3]==0)&(Digit[2]==0)&(Digit[1]==1)&(Digit[0]==0)&(Valid))begin    //2
                 C3 <= C3 + 8'b00000001;       //Voto no William-3472
-                Status <= 1;
+                StatusValido <= 1;
               end
               else if(Valid)begin
                   Estado <= 4'b1000;
@@ -100,7 +101,7 @@ always @ (posedge Clock) begin
             begin
               if((Digit[3]==0)&(Digit[2]==1)&(Digit[1]==0)&(Digit[0]==0)&(Valid))begin   //4
                 C4 <= C4 + 8'b00000001;       //Voto no Marcos-3504
-                Status <= 1;
+                StatusValido <= 1;
               end
               else if(Valid)begin
                   Estado <= 4'b1000;
@@ -109,16 +110,18 @@ always @ (posedge Clock) begin
       	  4'b1000: //E8
             begin           //Voto nulo.
               Nulo <= Nulo + 8'b00000001;
-              Status <= 0;
+              StatusNulo <= 0;
             end
         endcase
     end
-    if(Finish) begin
-        Status <= 0;
+    if(Next) begin
+        StatusValido <= 0;
+        StatusNulo <= 1;
         Estado <= 4'b0000;
     end
-    if (Reset) begin
-        Status <= 0;
+    if (Finish) begin
+        StatusValido <= 0;
+        StatusNulo <= 1;
         Nulo <= 8'b00000000;
         C1 <= 8'b00000000;
         C2 <= 8'b00000000;
