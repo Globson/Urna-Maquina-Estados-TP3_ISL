@@ -49,9 +49,10 @@ wire StatusLEDValido,StatusLEDNulo;
 assign LEDG[7] = StatusLEDValido;
 assign LEDR[0] = ~StatusLEDNulo;
 assign LEDR[17:10] = REG_AUX;
+assign LEDG[0] = ~KEY[0];
 reg [2:0]Aux;
 wire Clock;
-assign Clock = KEY[0];   //Botao para clock manual.
+assign Clock = ~KEY[0];   //Botao para clock manual.
 //=======================================================
 //  Structural coding
 //=======================================================

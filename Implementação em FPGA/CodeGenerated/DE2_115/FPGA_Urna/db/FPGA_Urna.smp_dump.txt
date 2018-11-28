@@ -1,12 +1,13 @@
 
 State Machine - |FPGA_Urna|Urna_module:UrnaFPGA|Estado
-Name Estado.0111 Estado.0110 Estado.0101 Estado.0100 Estado.0011 Estado.0010 Estado.0001 Estado.0000 Estado.1000 
-Estado.0000 0 0 0 0 0 0 0 0 0 
-Estado.0001 0 0 0 0 0 0 1 1 0 
-Estado.0010 0 0 0 0 0 1 0 1 0 
-Estado.0011 0 0 0 0 1 0 0 1 0 
-Estado.0100 0 0 0 1 0 0 0 1 0 
-Estado.0101 0 0 1 0 0 0 0 1 0 
-Estado.0110 0 1 0 0 0 0 0 1 0 
-Estado.0111 1 0 0 0 0 0 0 1 0 
-Estado.1000 0 0 0 0 0 0 0 1 1 
+Name Estado.1001 Estado.1000 Estado.0111 Estado.0110 Estado.0101 Estado.0100 Estado.0011 Estado.0010 Estado.0001 Estado.0000 
+Estado.0000 0 0 0 0 0 0 0 0 0 0 
+Estado.0001 0 0 0 0 0 0 0 0 1 1 
+Estado.0010 0 0 0 0 0 0 0 1 0 1 
+Estado.0011 0 0 0 0 0 0 1 0 0 1 
+Estado.0100 0 0 0 0 0 1 0 0 0 1 
+Estado.0101 0 0 0 0 1 0 0 0 0 1 
+Estado.0110 0 0 0 1 0 0 0 0 0 1 
+Estado.0111 0 0 1 0 0 0 0 0 0 1 
+Estado.1000 0 1 0 0 0 0 0 0 0 1 
+Estado.1001 1 0 0 0 0 0 0 0 0 1 

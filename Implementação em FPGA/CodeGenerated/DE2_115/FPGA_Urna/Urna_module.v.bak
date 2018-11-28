@@ -69,7 +69,6 @@ always @ (posedge Clock) begin
               if((Digit[3]==0)&(Digit[2]==1)&(Digit[1]==0)&(Digit[0]==0)&(Valid))begin    //4
                  C1 <= C1 + 8'b00000001;       //Voto no Samuel-3494
                  StatusValido <= 1;
-					       Estado <= 4'b1001;
               end
               else if(Valid)begin
                   Estado <= 4'b1000;
@@ -81,7 +80,6 @@ always @ (posedge Clock) begin
               if((Digit[3]==0)&(Digit[2]==1)&(Digit[1]==0)&(Digit[0]==1)&(Valid))begin    //5
                 C2 <= C2 + 8'b00000001;       //Voto no Yuri-3485
                 StatusValido <= 1;
-					      Estado <= 4'b1001;
               end
               else if(Valid)begin
                   Estado <= 4'b1000;
@@ -93,7 +91,6 @@ always @ (posedge Clock) begin
               if((Digit[3]==0)&(Digit[2]==0)&(Digit[1]==1)&(Digit[0]==0)&(Valid))begin    //2
                 C3 <= C3 + 8'b00000001;       //Voto no William-3472
                 StatusValido <= 1;
-					      Estado <= 4'b1001;
               end
               else if(Valid)begin
                   Estado <= 4'b1000;
@@ -105,7 +102,6 @@ always @ (posedge Clock) begin
               if((Digit[3]==0)&(Digit[2]==1)&(Digit[1]==0)&(Digit[0]==0)&(Valid))begin   //4
                 C4 <= C4 + 8'b00000001;       //Voto no Marcos-3504
                 StatusValido <= 1;
-					      Estado <= 4'b1001;
               end
               else if(Valid)begin
                   Estado <= 4'b1000;
@@ -115,11 +111,7 @@ always @ (posedge Clock) begin
             begin           //Voto nulo.
               Nulo <= Nulo + 8'b00000001;
               StatusNulo <= 0;
-				      Estado <= 4'b1001;
             end
-  			  4'b1001: //E9 Estado vazio
-    				begin
-    				end
         endcase
     end
     if(Next) begin
