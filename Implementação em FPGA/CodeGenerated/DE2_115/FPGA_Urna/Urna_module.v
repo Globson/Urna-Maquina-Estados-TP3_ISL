@@ -117,7 +117,7 @@ always @ (posedge Clock) begin
               StatusNulo <= 0;
 				      Estado <= 4'b1001;
             end
-  			  4'b1001: //E9 Estado vazio
+  			  4'b1001: //E9 -> Estado vazio criado para evitar votos acidentais a mais depois de realizar 1 voto em algum canditado ou nulo.
     				begin
     				end
         endcase
